@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giphy Search App</title>
+  <link rel="stylesheet" href="/css/styles.css"> 
+</head>
+
+<body> 
+
+<nav>
+  <ul>
+    <li>Giphy search App</li>
+  </ul>
+</nav>
+
+
+<img class='float-left space-round' src="<%= clickedGifDataArr.images.original.url %>" alt="gif" srcset="">
+
+<h1> Name: <%= clickedGifDataArr.username || 'Anonymous' %> </h1>
+<h4> Title: <%= clickedGifDataArr.title %> </h4>
+<h4> Rating: <%= clickedGifDataArr.rating %> </h4>
+<h4> Import_datetime: <%= clickedGifDataArr.import_datetime %> </h4>
+<h4> Height: <%= clickedGifDataArr.images.original.height %> </h4>
+<h4> Width: <%= clickedGifDataArr.images.original.width %> </h4>
+<h4> Link: <%= clickedGifDataArr.images.original.url %> </h4>
+
+<%- include('partials/footer') -%>

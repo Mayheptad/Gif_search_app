@@ -1,0 +1,22 @@
+{
+  "name": "giphyapisearchapp",
+  "version": "1.0.0",
+  "description": "Seamfix intervie (Implement a simple .gif search app based on the Giphy API)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gif",
+    "search",
+    "app"
+  ],
+  "author": "Osho Abiodun Adewunmi (Mayheptad)",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "node-fetch": "^3.2.0"
+  }
+}

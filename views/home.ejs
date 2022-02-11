@@ -1,0 +1,19 @@
+
+
+<%- include('partials/header') -%>
+
+
+<div class="my-flex-container">
+    
+    <% if (giphyDataArr.length == 1 && giphyDataArr.at(0) == 'Something Went Wrong, PLease try again later'){ %> 
+        <p> <%= giphyDataArr.at(0) %> </p>
+        <% } else { %> 
+            <% giphyDataArr.forEach( eachGifDetail => { %> 
+                    <a href='/posts/<%= eachGifDetail.id %>'> <img class='space-round' src="<%= eachGifDetail.images.original.url %>" alt="gif"> </a>
+                    <% } ); %>
+            <%  }%> 
+</div>
+
+
+<%- include('partials/footer') -%>
+
